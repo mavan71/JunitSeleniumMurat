@@ -1,0 +1,28 @@
+Selenium Day 13
+--------------------------------------------------------------------------------------------------
+
+
+WEBTABLES
+
+	Seleniumda webtable lar dinamik elementlerdir (satir ve sutun sayilari degisiklik gosterebilir.)
+	Tabloda bulunan datalari ve bazi infolari almanin bazi yollari
+
+		- locator = //table//tr -> findElements(locator).size() bize  satir sayisini verecektir (1+)
+		- locator = table//tr[1]//td -> findElements(locator).size() bize sutun sayisini verir (1+)
+			(satir ve sutun sayisi kullanilarak nested for ile datalar ustunde gezinebiliriz)
+
+		- locator //table//tr[i] -> bize tablonun i. satirini verir (1)
+		- locator //table//tr[i]//td[j] -> bize tablonun i. satirindaki j. hucreyi verir (1)
+		- locator //table//tr//td[j] -> bize tablonun j. hucresindeki tum datalari verir (1+)
+
+		bir element icerisinde baska bir element ariyorsak xpath i ".//" ile baslatmaliyiz. Buradaki "." bulundugumuz node u temsil eder.
+
+
+
+LOG4J
+	
+	Seleniumla alakasi yoktur ama selenium frameworkunde kullanilabilir. Loglamalar icin kullanilir.
+	Baslica avantajlari:
+		- Log seviyesi belirlenebilir
+		- Farkli dosyalara loglar alinabilir
+		- Loglar konfigure edilebilir (log4j.properties)

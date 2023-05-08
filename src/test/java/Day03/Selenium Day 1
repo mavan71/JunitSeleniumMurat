@@ -1,0 +1,73 @@
+Selenium Day 1
+-------------------------------------------------------------------------------------------------------------
+
+Example USER STORY and ACCEPTANCE CRITERIA
+
+
+
+USER STORY: As a User I should be able to register to the application (Bir kullanici olarak uygulamaya kayit olabilmeliyim)
+	Acceptance criteas: 
+		-email should include "@" and "." characters. (email @ ve . isaretlerini barindirmalidir)
+		-Password should be at least 8 characters long (Sifre en az 8 karakterden olusmalidir)
+		-Password should have at least an uppercase letter and a lowercase letter (Sifrede en az 1 buyuk ve bir kucuk harf bulunmalidir)
+
+
+
+		TC_001 (Positive): Kullanici gecerli email ve sifreyle kayit oldugunda sisteme kayit olabilmeli ve giris yapabilmelidir
+			Kullanici register sayfasini acar
+			Kullanici email alanina "valid@valid.com" yazar
+			Kullanici sifre alanina "KarlOrtis1" yazar 
+			Kullanici kayit ol butonuna basar
+			Kullanici sisteme kayitli oldugunu goruntuleyebilmelidir
+			Kullanici sisteme bu credential lar ile giris yapabilmelidir 
+
+			Expected result = actual result -> test is PASSED
+
+		TC_002 (Negative):
+			Kullanici register sayfasini acar
+			Kullanici email alanina "validvalid.com" yazar
+			Kullanici sifre alanina "KarlOrtis1" yazar 
+			Kullanici kayit ol butonuna basar
+			Kullanici ekranda gecersiz email hata mesajini goruntulemelidir.
+			Kullanici bu credentiallar ile sisteme giris yapamaz
+
+
+
+-- Otomasyon testi "pat" diye yapilmaz. Oncesinde manuel testler ile uygulamanin stabil olup olmadigi kontrol edilmelidir
+-- Bir fonksiyon stabil (stable) bir sekilde caliisyorsa otomasyon testleri haline getirilebilir. 
+
+
+Browser Control Commands
+----------------------------------------
+
+driver.methodname();
+
+	-> get()
+	-> getTitle()
+	-> getCurrentUrl()
+	-> getPageSource()
+	-> close()
+	-> quit()
+
+
+Navigation Commands
+----------------------------------------
+
+driver.navigate().methodname();
+
+	-> back()
+	-> forward()
+	-> refresh()
+	-> to()
+
+
+Window Commands
+----------------------------------------
+
+driver.manage().window().methodname();
+
+	-> maximize()
+	-> minimize()
+	-> fullscreen()
+	
+

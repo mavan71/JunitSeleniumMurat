@@ -1,0 +1,28 @@
+Selenium Day 6
+---------------------------------------------------------------------------------------------------------------
+
+
+RELATIVE LOCATOR
+	Selenium 4 ile hayatimiza girdi
+	By locator = RelativeLocator.with({element_locator}).above({referans_element_locator});
+	driver.findElement(locator);
+
+
+CHROME OPTIONS
+
+	ChromeOptions options = new ChromeOptions();
+    options.addArguments("{argument}");
+    WebDriver driver = new ChromeDriver(options);
+
+CHECKBOX AND RADIO
+
+	Checkbox ve radio lar ile etkilesime gecerken click aksiyonunu kullaniyoruz
+	isSelected() methodunu aktif olarak kullaniyoruz. 
+
+FAKER
+
+	Faker class i bizim bazi verileri fake etmemizi saglar. 
+	Her test icin kullanacagimiz rastgele bir isim varsa eger faker class i kullanilarak bu isim fake edilebilir
+
+	Faker faker = new Faker();
+	faker.name()......

@@ -1,0 +1,57 @@
+Selenium Day 4
+------------------------------------------------------------------------------
+
+Locators
+	ID, Name, Class, Tag, LinkText, PartialLinkText, CSS Selector, XPath
+
+
+Elementleri nasil locate ediyoruz? 
+
+	driver.findElement(By.id(String id));
+	driver.findElement(By.name(String name));
+	driver.findElement(By.className(String class));
+	driver.findElement(By.tagName(String tag));
+	driver.findElement(By.linkText(String text));
+	driver.findElement(By.partialLinkText(String text));
+	driver.findElement(By.cssSelector(String cssExpression));
+	driver.findElement(By.xpath(String xpathExpression));
+
+
+WebElement Commands
+
+	*sendKeys(String text)
+	*click()
+	*clear()
+	submit()
+	isDisplayed() -> boolean deger return eder. Assertionlarda kullanilabilir. görüntülenebiliyormu?
+	isEnabled() -> boolean deger return eder. Assertionlarda kullanilabilir. aktifmi?
+	isSelected() -> boolean deger return eder. Assertionlarda kullanilabilir. seçilimi?
+	getAttribute() -> String deger return eder. Assertionlarda kullanilabilir 
+	getText() -> String deger return eder. Assertionlarda kullanilabilir 
+
+
+XPath
+
+	Absolute vs Relative xpath
+
+		Absolute XPath-> /html/body/..../input  (absolute xpath stabil olmayacagindan kesinlikle kaciniyoruz)
+
+		Relative XPath-> //tag[@attr='value'](atributu value olan tag ları bul)
+
+
+	Relative Xpath expressions
+
+		AND mantigi ile yazilan expressionlar
+
+			//tag[@attr1='value1'][@attr2='value2']
+			//tag[@attr1='value1' and @attr2='value2']
+
+				-> tag elementini ariyoruz. Tek arayis icerisindeyiz. Attribute sartlarindan ikisini de saglayan tum elementleri locate etmis oluyoruz
+		
+		OR mantigi ile yazilan expressionlar
+
+			//tag[@attr1='value1' or @attr2='value2']
+
+
+				-> tag elementini ariyoruz. 2 farkli arayis icerisindeyiz. Attribute sartlarindan en az birini saglayan tum elementleri locate etmis oluyoruz
+

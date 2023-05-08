@@ -1,0 +1,30 @@
+Selenium Day 9
+----------------------------------------------------------------------------------------------------
+
+WINDOW HANDLE
+
+	driver.getWindowHandle(); -> aktif olan pencere ve sekmemizin window handle (id) degerini bize verir.
+	driver.getWindowHandles(); -> tum pencere ve sekmelerin window handle (id) lerini bir Set olarak bize dondurur.
+	driver.switchTo().window(id); -> window handle degeri id olan pencere veya sekmeye gecis yapmamizi saglar.
+	driver.switchTo().newWindow(TAB); -> Yeni sekme olusturur.
+	driver.switchTo().newWindow(WINDOW); -> Yeni pencere olusturur.
+
+	Sekmeler arasinda gecis yaparken getWindowHandles() methodu yardimiyla Set<String> olarak handle lar alinir.
+	Iterator sayesinde Set uzerinde gezinerek sekmeler arasinda gezinebiliriz.
+
+ACTIONS
+
+
+	Actions actions = new Actions(driver);
+
+	Actions class i selenium da bolca kullanilan bir classtir. Elementlerle etkilesime girerken click() ve sendKeys() methodu tek basina yeterli olmadiginda actions class i sayesinde daha farkli etkilesimlere girebiliriz. 
+	Orn:
+		actions.moveToElement().perform();
+		actions.dragAndDrop().perform();
+		actions.contextClick().perform();
+		actions.doubleClick().perform();
+		actions.clickAndHold().perform();
+		actions.release().perform();
+
+
+		https://us06web.zoom.us/j/89327840534

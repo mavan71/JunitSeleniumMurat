@@ -1,0 +1,10 @@
+2023-05-03 23:07:00 INFO  C03_Log4j:14 - This is info Message
+2023-05-03 23:07:00 WARN  C03_Log4j:15 - This is warn Message
+2023-05-03 23:07:00 ERROR C03_Log4j:16 - This is error Message
+2023-05-03 23:07:00 FATAL C03_Log4j:17 - This is fatal Message
+2023-05-03 23:08:18 TRACE C03_Log4j:12 - This is atrace Message
+2023-05-03 23:08:18 DEBUG C03_Log4j:13 - This is Debug Message
+2023-05-03 23:08:18 INFO  C03_Log4j:14 - This is info Message
+2023-05-03 23:08:18 WARN  C03_Log4j:15 - This is warn Message
+2023-05-03 23:08:18 ERROR C03_Log4j:16 - This is error Message
+2023-05-03 23:08:18 FATAL C03_Log4j:17 - This is fatal Message

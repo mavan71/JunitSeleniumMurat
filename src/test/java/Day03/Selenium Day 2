@@ -1,0 +1,27 @@
+Selenium Day 2 
+------------------------------------------------------------------------------------------------------------
+
+Window commands
+
+	-> getPosition()
+	-> setPosition(Point point)
+	-> getSize()
+	-> setSize(Dimension dimension)
+
+
+New Project
+
+
+Maven 
+
+	pom.xml
+
+		pom.xml e dependency nasil eklenir
+
+			- oncelikle yoksa project tagleri arasina dependencies tagini olustur 
+
+			- <dependencies>
+
+				//mvnrepository den alinan Dependency linkini buraya yapistir 
+
+			  </dependencies>

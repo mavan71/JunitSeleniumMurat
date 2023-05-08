@@ -1,0 +1,18 @@
+Selenium Day 7
+-----------------------------------------------------------------------------------------------------------
+
+DROPDOWN
+
+	Dropdownlar seleniumdaki ozel bir class la ifade edilir -> Select
+
+	Select select = new Select(element);
+	select elementi kesinlikle select tag ine sahip olmalidir
+
+	select objesi olusturulduktan sonra select methodlari uygulanarak secim ve secim kaldirma islemleri yapilir.
+
+
+
+SELENIUM WAITS
+
+
+https://1.bp.blogspot.com/-KBbAuVa17xg/YGrSh-mlNbI/AAAAAAAAXs4/1g2om0Fuq_ka99sSNZ84Q_KnQTk1xVMyACLcBGAsYHQ/s869/Capture123.JPG
