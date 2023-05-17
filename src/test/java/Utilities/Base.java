@@ -10,10 +10,10 @@ import org.openqa.selenium.interactions.Actions;
 
 import java.time.Duration;
 
-public class Base {
+public abstract class Base {
 
 
-    protected WebDriver driver;
+    protected static WebDriver driver;
     protected Actions actions;
     protected Faker faker=new Faker();
 

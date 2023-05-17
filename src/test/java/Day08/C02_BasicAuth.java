@@ -12,6 +12,8 @@ public class C02_BasicAuth extends Base {
     @Test
     public void basicAuth(){
 
+
+        //driver.get("https://kullanıcıadi:şifre@the-internet.herokuapp.com/basic_auth");// admin vepassword buşekilde yazılıyor.
         driver.get("https://admin:admin@the-internet.herokuapp.com/basic_auth");
 
         WebElement congrats = driver.findElement(By.tagName("p"));

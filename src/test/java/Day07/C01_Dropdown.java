@@ -7,9 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
-public class Dropdown extends Base {
+public class C01_Dropdown extends Base {
 
         // Dropdownlar ozel etkilesimler gerektirdiginden dolayi Selenium bize dropdownlar icin ayri bir class olusturmus durumda.
         // Class -> Select

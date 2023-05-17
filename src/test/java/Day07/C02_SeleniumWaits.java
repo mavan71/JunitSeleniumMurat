@@ -33,7 +33,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class SeleniumWaits extends Base {
+public class C02_SeleniumWaits extends Base {
 
 
         // Selenium wait ler selenium icin kritik bir konsepttir. Senkronize bir sekilde elementleri bulmamizi
