@@ -10,10 +10,11 @@ public class C04_Actions extends Base {
 
         // Bu zamana kadar kullandigimiz aksiyon methodlari sendKeys ve click den ibaretti.
         // Peki ya biz bu hareketlerdene daha farkli hareketler yapmak istersek....
+        // Sağ tıklamak orta taklamak üzerinde durup bekleme, tutup sürüklemek
 
         //    Go to URL: https://demoqa.com/buttons
-//    Run the buttons on the page using the Actions Class.
-//    Verify the texts that appear after the buttons are operated.
+        //    Run the buttons on the page using the Actions Class.
+        //    Verify the texts that appear after the buttons are operated.
 
 
     @Test

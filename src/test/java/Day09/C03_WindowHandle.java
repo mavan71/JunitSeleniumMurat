@@ -30,13 +30,21 @@ public class C03_WindowHandle extends Base {
         driver.switchTo().newWindow(WindowType.WINDOW);
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 
-        Set<String> windowHandles = driver.getWindowHandles();
+        Set<String> windowHandles = driver.getWindowHandles();// aşağıdaki kod parçası, WebDriver ile açılan tüm pencerelerin tanıtıcılarını elde eder ve bir Set<String> kümesine atar:
         Iterator<String> i = windowHandles.iterator();
+        /*
+        windowHandles isimli bir Set<String> kümesi olduğunu varsayarsak, windowHandles.iterator() ifadesi,
+        bu kümenin üzerinde döngü yapmak için bir Iterator nesnesi oluşturur.
+        Iterator nesnesi, belirli bir koleksiyon üzerinde gezinmeyi sağlayan bir Java arabirimidir.
 
+        Iterator nesnesi, hasNext() ve next() gibi metotları sağlar. hasNext() metodu,
+        ilerleyebilecek bir sonraki öğe olup olmadığını kontrol ederken, next() metodu bir sonraki öğeyi döndürür
+        ve iteratoru bir sonraki konuma taşır.
+         */
         while (i.hasNext()){
             String currentHandle = i.next();
             driver.switchTo().window(currentHandle);
-//            System.out.println("driver.getWindowHandle() = " + driver.getWindowHandle());
+            System.out.println("driver.getWindowHandle() = " + driver.getWindowHandle());
 
             // driver imin aktif sekmesinin title i amazon kelimesini icerdiginde donguyu terk et
             if (driver.getTitle().toLowerCase().contains("amazon")){
